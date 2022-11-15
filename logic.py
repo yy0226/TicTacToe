@@ -85,7 +85,8 @@ def get_winner(board):
         elif board[0][2] == 'O':
             return 2
         else:
-            return None             
+            return None
+
 
 
 def other_player(player):
