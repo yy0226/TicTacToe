@@ -2,6 +2,7 @@
 # or output happens here. The logic in this file
 # should be unit-testable.
 
+#test
 
 def make_empty_board():
     return [
@@ -86,7 +87,20 @@ def get_winner(board):
             return 2
         else:
             return None
-
+    
+    #My thought: no 'None' on the board but there is no winner
+    #elif board[0][0]!= None and  board[0][1]!= None and board[0][2]!= None
+    #I tried using loop to code
+    """for i in board:
+        if i != None"""
+def check_draw(self, board):
+    #check if its a draw
+    isDraw = True
+    for row in board.board():
+        #if there is space left in the board, it's not a draw
+        if None in row:
+            isDraw = False
+    return isDraw
 
 
 def other_player(player):
