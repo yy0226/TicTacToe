@@ -1,0 +1,36 @@
+fancy {
+    font-family: Helvetica;
+}
+
+#board {
+    border-collapse: collapse;
+    font-size: 32px;
+    margin: auto;
+    
+}
+
+.black, .white {
+    width: 36px;
+    height: 36px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+.white {
+    background-color: rgb(225, 236, 203);
+}
+.black {
+    background-color:rgb(108, 145, 98);
+}
+
+form {
+    margin: auto;
+}
+
+img {
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
