@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../static/styles_new.css" />
+
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+    </head>
+    <h2>First player: {{player1}}</h2>
+    {% if winner %}
+    <h2>Second player: {{player2}}</h2>
+    {% if winner %}
+    <div>
+        <h1> Winner is {{winner}}</h1>
+    </div>
+    {% endif %}
+    <body>
+        <div>
+          <table id="board">
+            <tr>
+              <td class="black" id="tl">{{ board[0][0] }}</td>
+              <td class="white" id="tm">{{ board[0][1] }}</td>
+              <td class="black" id="tr">{{ board[0][2] }}</td>
+            </tr>
+            <tr>
+              <td class="white" id="ml">{{ board[1][0] }}</td>
+              <td class="black" id="mm">{{ board[1][1] }}</td>
+              <td class="white" id="mr">{{ board[1][2] }}</td>
+            </tr>
+            <tr>
+              <td class="black" id="ll">{{ board[2][0] }}</td>
+              <td class="white" id="lm">{{ board[2][1] }}</td>
+              <td class="black" id="lr">{{ board[2][2] }}</td>
+            </tr>
+          </table>
+        </div>
+    </body>
+</html>
